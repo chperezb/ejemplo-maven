@@ -9,8 +9,8 @@ pipeline {
             steps {
                checkout(
                         [$class: 'GitSCM',
-                        branches: [[name: "jenkins-as-code" ]],
-                        userRemoteConfigs: [[url: 'https://github.com/chperezb/jenkinsfile-as-code']]])
+                        branches: [[name: "jenkinsfile-as-code" ]],
+                        userRemoteConfigs: [[url: 'https://github.com/chperezb/ejemplo-maven']]])
             }
         }
         stage("Paso 2: Compliar"){
